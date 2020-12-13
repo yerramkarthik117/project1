@@ -1,0 +1,210 @@
+<html>
+<head>
+<style>
+body
+{
+font-size:25;
+text-allign:center;
+font-weight:bolder;
+}
+td
+{
+font-size:25;
+text-allign:center;
+font-weight:bolder;
+background-color:orange;
+color:blue;
+}
+</style>
+<script>
+function find()
+{
+var d=new Array(20);
+var i=0;
+var cj=0;
+var cps=0;
+var cthyr=0;
+var cul=0;
+var cfl=0;
+var ctyd=0;
+if(document.getElementById("a").checked)
+{
+d[i]="a";
+i++;
+}
+if(document.getElementById("b").checked)
+{
+d[i]="b";
+i++;
+}
+if(document.getElementById("c").checked)
+{
+d[i]="c";
+i++;
+}
+if(document.getElementById("dd").checked)
+{
+d[i]="dd";
+i++;
+}
+if(document.getElementById("e").checked)
+{
+d[i]="e";
+i++;
+}
+if(document.getElementById("f").checked)
+{
+d[i]="f";
+i++;
+}
+if(document.getElementById("g").checked)
+{
+d[i]="g";
+i++;
+}
+if(document.getElementById("h").checked)
+{
+d[i]="h";
+i++;
+}
+if(document.getElementById("ii").checked)
+{
+d[i]="ii";
+i++;
+}
+if(document.getElementById("j").checked)
+{
+d[i]="j";
+i++;
+}
+if(document.getElementById("k").checked)
+{
+d[i]="k";
+i++;
+}
+if(document.getElementById("l").checked)
+{
+d[i]="l";
+i++;
+}
+if(document.getElementById("m").checked)
+{
+d[i]="m";
+i++;
+}
+if(document.getElementById("n").checked)
+{
+d[i]="n";
+i++;
+}
+if(document.getElementById("o").checked)
+{
+d[i]="o";
+i++;
+}
+var j=new Array("dd","c","e");
+var tyd=new Array("a","b","n");
+var ps=new Array("c","f","o");
+var thyr=new Array("g","h");
+var ul=new Array("ii","j","k");
+var fl=new Array("a","l","m");
+for(i=0;i<d.length;i++)
+{
+if(j.includes(d[i]))
+cj++;
+if(tyd.includes(d[i]))
+ctyd++;
+if(ps.includes(d[i]))
+cps++;
+if(thyr.includes(d[i]))
+cthyr++;
+if(ul.includes(d[i]))
+cul++;
+if(fl.includes(d[i]))
+cfl++;
+}
+var f=new Array(cj,cps,cthyr,cul,cfl,ctyd);
+var x=new Array(cj,cps,cthyr,cul,cfl,ctyd);
+f.sort();
+f.reverse();
+
+if(f[0]<2)
+
+window.location="h1.html"
+else
+{
+var pq=x.indexOf(f[0]);
+if(pq==0)
+{
+window.location="d2.html"
+}
+else if(pq==5)
+{
+window.location="d1.html"
+}
+else if(pq==1)
+{
+window.location="d3.html"
+}
+else if(pq==2)
+{
+window.location="d4.html"
+}
+else if(pq==4)
+{
+window.location="d6.html"
+}
+else if(pq==3)
+{
+window.location="d5.html"
+}
+
+
+}
+}
+</script>
+</head>
+</head>
+<body bgcolor=skyblue>
+<h1 align=center>DISEASE DETECTOR<h1>
+<h1 align=center>Select Symptoms<h1>
+<form>
+<table align=center cellspacing=8><tr><td>
+<input type="checkbox" id="a">Fever<br></td><td>
+<input type="checkbox" id="b">Pains&Aches<br></td></tr><tr><td>
+<input type="checkbox" id="c">Itchiness<br></td><td>
+<input type="checkbox" id="dd">Yellow Ting On Skin<br></td></tr><tr><td>
+<input type="checkbox" id="e">Dark Urine<br></td><td>
+<input type="checkbox" id="f">Red Patches On Skin<br></td></tr><tr><td>
+<input type="checkbox" id="g">Weight Gain<br></td><td>
+<input type="checkbox" id="h">Higheher Cholestral Levels<br></td></tr><tr><td>
+<input type="checkbox" id="ii">Stomachpain<br></td><td>
+<input type="checkbox" id="o">Dry Skin<br></td></tr><tr><td>
+<input type="checkbox" id="j">Vomitings<br></td><td>
+<input type="checkbox" id="k">Acid Reflux<br></td></tr><tr><td>
+<input type="checkbox" id="l">Cough<br></td><td>
+<input type="checkbox" id="m">Fatigue<br></td></tr><tr><td>
+<input type="checkbox" id="n">Diarrhia<br></td><td>
+<input type="checkbox">None</td></tr>
+
+<tr><td colspan=2 align=center>
+<input type="button" style="background-color:blue;font-weight:bolder;font-size:20;color:red;" value=FIND onclick="find()">
+</td></tr></table>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
